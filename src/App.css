@@ -1,0 +1,14 @@
+.App {
+  background-color: black;
+}
+.nav > h3 {
+  color: white;
+}
+
+.nav {
+  position: sticky;
+  display: flex;
+}
+.buttons {
+  /* justify-items: right; */
+}
