@@ -1,7 +1,6 @@
 import React from 'react'
 import { Button } from '@material-ui/core'
 import './Button1.css'
-import Icon from '@material-ui/core/Icon'
 
 const Button1 = ({ Icon, title }) => {
   return (
