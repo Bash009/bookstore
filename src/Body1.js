@@ -9,7 +9,7 @@ const Body1 = () => {
         flexWrap: 'wrap',
       }}
     >
-      {a.map(({ name, image }) => (
+      {a.map(({ name, image, price, emoji }) => (
         <div
           style={{
             objectFit: 'contain',
@@ -21,6 +21,10 @@ const Body1 = () => {
           <img src={image} alt='' />
 
           <p style={{ color: 'white', fontWeight: '800' }}>{name}</p>
+          <span>
+            <p>{price}</p>
+            <p>{emoji}</p>
+          </span>
         </div>
       ))}
     </div>
