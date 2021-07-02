@@ -1,6 +1,7 @@
 import React from 'react'
 // import { a } from './store'
-const Disc = () => {
+const Disc = (alpha) => {
+  alert(alpha)
   return <div></div>
 }
 

@@ -1,18 +1,21 @@
 import React from 'react'
 import { a } from './store'
+// import { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import Disc from './Disc'
 const Body1 = () => {
+  const handleClick = (e) => <Disc id={e.target.id} />
+
   return (
-    <Link to='/topic' style={{ textDecoration: 'none' }}>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-evenly',
-          flexWrap: 'wrap',
-        }}
-      >
-        {a.map(({ name, image, price, emoji }) => (
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'space-evenly',
+        flexWrap: 'wrap',
+      }}
+    >
+      {a.map(({ id, name, image, price, emoji }) => (
+        <Link to={`/${id}`} style={{ textDecoration: 'none' }}>
           <div
             style={{
               objectFit: 'contain',
@@ -21,7 +24,7 @@ const Body1 = () => {
               cursor: 'pointer',
             }}
           >
-            <img src={image} alt='' />
+            <img src={image} alt='' id={id} onClick={handleClick} />
 
             <span
               style={{
@@ -33,9 +36,9 @@ const Body1 = () => {
               <p>{emoji}</p>
             </span>
           </div>
-        ))}
-      </div>
-    </Link>
+        </Link>
+      ))}
+    </div>
   )
 }
 
