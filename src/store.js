@@ -4,6 +4,7 @@ export const a = [
     name: 'Us',
     price: '2898.00',
     emoji: '⭐⭐⭐⭐',
+    text: 'Adelaide Wilson and her family are attacked by mysterious figures dressed in red. Upon closer inspection, the Wilsons realise that the intruders are exact lookalikes of them.',
   },
   {
     image:
@@ -11,6 +12,7 @@ export const a = [
     name: 'The Invisible Man',
     price: '3098.00',
     emoji: '⭐⭐⭐',
+    text: `Cecilia's abusive ex-boyfriend fakes his death and becomes invisible to stalk and torment her. She begins experiencing strange events and decides to hunt down the truth on her own.`,
   },
   {
     image:
@@ -18,6 +20,7 @@ export const a = [
     name: 'The Babadook',
     price: '2500.00',
     emoji: '⭐⭐⭐⭐⭐',
+    text: `A single mother, plagued by the violent death of her husband, battles with her son's fear of a monster lurking in the house, but soon discovers a sinister presence all around her.`,
   },
   {
     image:
@@ -25,6 +28,7 @@ export const a = [
     name: 'Get Out',
     price: '1000.00',
     emoji: '⭐⭐',
+    text: `Chris, an African-American man, decides to visit his Caucasian girlfriend's parents during a weekend getaway. Although they seem normal at first, he is not prepared to experience the horrors ahead.`,
   },
   {
     image:
@@ -32,6 +36,7 @@ export const a = [
     name: 'The Lighthouse',
     price: '1500.50',
     emoji: '⭐⭐⭐⭐',
+    text: `In a remote island, Ephraim Winslow arrives as a lighthouse keeper and assists his elderly supervisor, Thomas Wake. As days pass, Winslow is haunted by strange and mysterious visions.`,
   },
   {
     image:
@@ -39,6 +44,7 @@ export const a = [
     name: 'It Follows',
     price: '2900.70',
     emoji: '⭐⭐⭐',
+    text: `After carefree teenager Jay (Maika Monroe) sleeps with her new boyfriend, Hugh (Jake Weary), for the first time, she learns that she is the latest recipient of a fatal curse that is passed from victim to victim via sexual intercourse. Death, Jay learns, will creep inexorably toward her as either a friend or a stranger. Jay's friends don't believe her seemingly paranoid ravings, until they too begin to see the phantom assassins and band together to help her flee or defend herself.`,
   },
   {
     image:
@@ -46,20 +52,23 @@ export const a = [
     name: 'Aliens',
     price: '3500.00',
     emoji: '⭐⭐⭐',
+    text: `Ellen Ripley is sent back to the planet LV-426 to establish contact with a terraforming colony. Once there, she encounters the Alien Queen and her offspring and has to fight them to survive.`,
   },
   {
     image:
       'https://resizing.flixster.com/9-_e6_mcjcdDrm2iEU5TZyEkn6c=/206x305/v2/https://flxt.tmsimg.com/assets/p1845_p_v10_ai.jpg',
-    name: 'King Kong',
+    name: `Rosemary's Baby`,
     price: '2200.00',
     emoji: '⭐⭐',
+    text: `After moving into an apartment with Guy, her husband, Rosemary hears and dreams strange things. When she gets pregnant, she suspects her neighbours have sinister plans for her baby.`,
   },
   {
     image:
-      'https://resizing.flixster.com/lj7DV6egWWy14Kq3uLcK_-0Pot4=/206x305/v2/https://flxt.tmsimg.com/assets/p9384_p_v10_as.jpg',
-    name: `Rosemary's Baby`,
+      'https://resizing.flixster.com/JMBbfFRrY8Qg6DeuSZHCFfn67dY=/206x305/v2/https://flxt.tmsimg.com/assets/p2242_p_v10_aa.jpg',
+    name: `King Kong`,
     price: '2100.00',
     emoji: '⭐⭐⭐',
+    text: `Filmmaker Carl Denham and his crew encounter a giant ape in Skull Island and imprison it to bring it to New York. However, they land in trouble when the giant ape is set free in the city.`,
   },
   {
     image:
@@ -67,6 +76,7 @@ export const a = [
     name: `Host`,
     price: '2100.90',
     emoji: '⭐⭐⭐⭐',
+    text: `Six friends accidentally invite the attention of a demonic presence during an online séance and begin noticing strange occurrences in their homes.`,
   },
   {
     image:
@@ -74,6 +84,7 @@ export const a = [
     name: `Relic`,
     price: '500.00',
     emoji: '⭐',
+    text: `When family matriarch Edna goes missing, her daughter and granddaughter return home to find her. They discover a haunting presence hanging over the home, which is taking over Edna's mind.`,
   },
   {
     image:
@@ -81,5 +92,6 @@ export const a = [
     name: `Midsommar`,
     price: '2580.00',
     emoji: '⭐⭐⭐',
+    text: `Dani's psychological trauma affects her relationship with Christian, her lover. However, when they visit their friend's ancestral commune in an effort to mend things, it changes their lives forever.`,
   },
 ]

@@ -3,27 +3,38 @@ import Button1 from './Button1'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 import AccountCircleIcon from '@material-ui/icons/AccountCircle'
 import ExitToAppIcon from '@material-ui/icons/ExitToApp'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 import Body1 from './Body1'
 import './body.css'
 
 function App() {
   return (
-    <div className='App'>
-      <div className='nav'>
-        <h3>Horror Movies</h3>
+    <Router>
+      <div className='App'>
+        <div className='nav'>
+          <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
+            <h3>Horror Movies</h3>
+          </Link>
 
-        <div style={{ display: 'flex' }}>
-          <Button1 Icon={ShoppingCartIcon} title='Cart' />
-          <Button1 Icon={AccountCircleIcon} title='Profile' />
-          <Button1 Icon={ExitToAppIcon} title='Logout' />
+          <div style={{ display: 'flex' }}>
+            <Link to='/Cart' style={{ textDecoration: 'none' }}>
+              <Button1 Icon={ShoppingCartIcon} title='Cart' />
+            </Link>
+            <Link to='/Profile' style={{ textDecoration: 'none' }}>
+              <Button1 Icon={AccountCircleIcon} title='Profile' />
+            </Link>
+            <Link to='/Logout' style={{ textDecoration: 'none' }}>
+              <Button1 Icon={ExitToAppIcon} title='Logout' />
+            </Link>
+          </div>
+        </div>
+
+        <div className='body1'>
+          <Body1 />
         </div>
       </div>
-
-      <div className='body1'>
-        <Body1 />
-      </div>
-    </div>
+    </Router>
   )
 }
 

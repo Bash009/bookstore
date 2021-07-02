@@ -1,11 +1,11 @@
 .nav > h3 {
-  color: white;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 .nav {
   position: sticky;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: black;
 }
