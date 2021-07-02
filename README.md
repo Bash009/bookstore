@@ -1,3 +1,8 @@
-# Getting Started with Create React App
+# Blockbuster
 
-## Heloo this is movie project
+## Hello this is movie project
+
+### Technologies Used:
+- React
+- Material-UI
+- Redux
