@@ -3,7 +3,8 @@ import Button1 from './Button1'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 import AccountCircleIcon from '@material-ui/icons/AccountCircle'
 import ExitToAppIcon from '@material-ui/icons/ExitToApp'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Disc from './Disc'
 
 import Body1 from './Body1'
 import './body.css'
@@ -31,7 +32,10 @@ function App() {
         </div>
 
         <div className='body1'>
-          <Body1 />
+          <Route path='/' component={Body1} exact />
+        </div>
+        <div>
+          <Route path='/Disc/:id' component={Disc} />
         </div>
       </div>
     </Router>

@@ -1,10 +1,12 @@
 import React from 'react'
 import { a } from './store'
 // import { useState } from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import Disc from './Disc'
+import { Link, useParams } from 'react-router-dom'
+
 const Body1 = () => {
-  const handleClick = (e) => <Disc id={e.target.id} />
+  // const handleClick = (e) => <Disc id={e.target.id} />
+  const { id } = useParams()
+  console.log(id, 'Hi!')
 
   return (
     <div
@@ -15,7 +17,7 @@ const Body1 = () => {
       }}
     >
       {a.map(({ id, name, image, price, emoji }) => (
-        <Link to={`/${id}`} style={{ textDecoration: 'none' }}>
+        <Link to={`/Disc/${id}`} style={{ textDecoration: 'none' }} key={id}>
           <div
             style={{
               objectFit: 'contain',
@@ -24,7 +26,7 @@ const Body1 = () => {
               cursor: 'pointer',
             }}
           >
-            <img src={image} alt='' id={id} onClick={handleClick} />
+            <img src={image} alt='' id={id} />
 
             <span
               style={{
