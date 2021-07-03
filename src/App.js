@@ -34,7 +34,7 @@ function App() {
         <div className='body1'>
           <Route path='/' component={Body1} exact />
         </div>
-        <div>
+        <div className='body1'>
           <Route path='/Disc/:id' component={Disc} />
         </div>
       </div>

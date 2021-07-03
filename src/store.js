@@ -1,7 +1,8 @@
 export const a = [
   {
     id: 1,
-    image: 'https://cutt.ly/omszX8r',
+    image:
+      'https://resizing.flixster.com/VHGL7Yfk-O1bz9OLwoCjp9Yl5bo=/206x305/v2/https://resizing.flixster.com/S2tuVOVa1x4-Myimy6g1kItVlmM=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzL2MyZWMxMmM0LTdmOTMtNDU3OC05MThiLTk2OTU5YjFkZDhjZi53ZWJw',
     name: 'Us',
     price: '2898.00',
     emoji: '⭐⭐⭐⭐',
