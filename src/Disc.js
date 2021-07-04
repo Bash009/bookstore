@@ -2,11 +2,17 @@ import React from 'react'
 import { a } from './store'
 import { useParams } from 'react-router'
 import './Disc.css'
+import { useState } from 'react'
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp'
+
 const Disc = () => {
   const z = useParams()
   // console.log('Paramas value', z.id)
   const b = [...a, a]
   console.log(b[3])
+
+  const [pp, setPP] = useState(0)
   return (
     <article
       style={{
@@ -15,7 +21,11 @@ const Disc = () => {
         color: 'white',
         fontWeight: 'bold',
         justifyContent: 'space-around',
+        height: '100%',
+        flexWrap: 'wrap',
+        marginBottom: '14%',
       }}
+      className='overlay'
     >
       <img
         src={b[z.id - 1].image}
@@ -35,8 +45,41 @@ const Disc = () => {
         </p>
         <p>₹ {b[z.id - 1].price}</p>
       </div>
-      <div style={{ flex: '0.2' }}>
-        <h1>Meow Meow Nigga</h1>
+      <div
+        style={{
+          flex: '0.2',
+          height: '50%',
+          flexDirection: 'column',
+          backgroundColor: 'gray',
+          opacity: '0.7',
+          marginRight: '20px',
+          borderRadius: '15px',
+        }}
+      >
+        <span style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+          <p style={{ fontWeight: 'bold' }}>Status:</p>
+          <p>In Stock</p>
+        </span>
+        <span style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+          <p style={{ fontWeight: 'bold' }}>&nbsp;&nbsp; Quantity:</p>
+          <input
+            type='text'
+            style={{ width: '20%', height: '10%', marginTop: '18px' }}
+            onChange={(e) => {
+              console.log(e.target.value)
+              setPP(e.target.value)
+            }}
+            placeholder='1'
+          ></input>
+          {/* <span style={{ display: 'flex', flexDirection: 'column' }}>
+            <KeyboardArrowUpIcon />
+            <KeyboardArrowDownIcon />
+          </span> */}
+        </span>
+        <span style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+          <p style={{ fontWeight: 'bold' }}>&nbsp;&nbsp;Total Price:</p>
+          <p>₹ {(parseFloat(b[z.id - 1].price) * pp).toFixed(2)}</p>
+        </span>
       </div>
     </article>
   )
