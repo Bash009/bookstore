@@ -10,4 +10,4 @@
 
 Phase-1
 
-![](phase1.jpeg)
+![](https://github.com/Bash009/bookstore/blob/master/phase1.gif)
