@@ -3,9 +3,6 @@ import { a } from './store'
 import { useParams } from 'react-router'
 import './Disc.css'
 import { useState } from 'react'
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
-import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp'
-
 const Disc = () => {
   const z = useParams()
   // console.log('Paramas value', z.id)
