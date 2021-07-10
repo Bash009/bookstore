@@ -9,8 +9,7 @@
 - React
 - Material-UI
 - Redux
-- Chakra UI
-- NodeJS
+- MongoDB
 
 Phase-1
 
