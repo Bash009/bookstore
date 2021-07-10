@@ -7,6 +7,7 @@
 - React
 - Material-UI
 - Redux
+- Bootstrap
 
 Phase-1
 
