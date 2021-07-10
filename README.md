@@ -1,7 +1,7 @@
 # Blockbuster
 
 ## Hello this is movie project
-### <em>(Don't mind the repo name 🙃)</em>
+<!-- ### <em>(Don't mind the repo name 🙃)</em> -->
 
 ### Technologies Used:
 - React
