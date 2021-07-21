@@ -1,6 +1,6 @@
 # Blockbuster
 
-## Hello this is movie project
+## Movie store 
 
 <!-- ### <em>(Don't mind the repo name 🙃)</em> -->
 
@@ -9,7 +9,6 @@
 - React
 - Material-UI
 - Redux
-- MongoDB
 
 Phase-1
 
