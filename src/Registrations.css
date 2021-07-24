@@ -1,0 +1,12 @@
+input {
+  height: 30px;
+  border-radius: 15px;
+  font-size: large;
+  margin: 10px;
+  width: 80%;
+}
+.button {
+  width: 20%;
+  justify-content: center;
+  color: 'black' !important;
+}

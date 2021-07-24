@@ -5,6 +5,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle'
 import ExitToAppIcon from '@material-ui/icons/ExitToApp'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Disc from './Disc'
+import Registration from './Registration'
 
 import Body1 from './Body1'
 import './body.css'
@@ -36,6 +37,19 @@ function App() {
         </div>
         <div className='body1'>
           <Route path='/Disc/:id' component={Disc} />
+        </div>
+        <div
+          className='body1'
+          style={{
+            textAlign: 'center',
+            width: '50%',
+            padding: '10px',
+            margin: 'auto',
+            backgroundColor: 'gray',
+            opacity: '0.7',
+          }}
+        >
+          <Route path='/registration' component={Registration} />
         </div>
       </div>
     </Router>

@@ -1,6 +1,6 @@
 # Blockbuster
 
-## Movie store 
+## Movie store
 
 <!-- ### <em>(Don't mind the repo name 🙃)</em> -->
 
@@ -13,5 +13,3 @@
 Phase-1
 
 ![](https://github.com/Bash009/bookstore/blob/master/phase1.gif)
-
-
