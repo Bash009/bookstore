@@ -46,7 +46,7 @@ function App() {
             padding: '10px',
             margin: 'auto',
             backgroundColor: 'gray',
-            opacity: '0.7',
+            opacity: '0.75',
           }}
         >
           <Route path='/registration' component={Registration} />
